@@ -28,10 +28,6 @@ export default function SecondPage() {
                                         title={"14.2.1"}
                                         description={"Política de desarrollo seguro"}
                             />
-                            <OptionCard url={"home/14.2/14.2.2"}
-                                        title={"14.2.2"}
-                                        description={"Procedimiento de control de cambios en sistemas"}
-                            />
                             <OptionCard url={"home/14.2/14.2.3"}
                                         title={"14.2.3"}
                                         description={"Revisión técnica de las aplicaciones tras efectuar cambios en el sistema operativo"}
@@ -47,6 +43,14 @@ export default function SecondPage() {
                             <OptionCard url={"home/14.2/14.2.6"}
                                         title={"14.2.6"}
                                         description={"Entorno de desarrollo seguro"}
+                            />
+                            <OptionCard url={"home/14.2/14.2.8"}
+                                        title={"14.2.8"}
+                                        description={"Pruebas de seguridad de sistemas"}
+                            />
+                            <OptionCard url={"home/14.2/14.2.9"}
+                                        title={"14.2.9"}
+                                        description={"Pruebas de aceptacion del sistema"}
                             />
                         </List>
                     </nav>

@@ -26,7 +26,7 @@ export default function ThirdPage() {
                         <List>
                             <OptionCard url={"home/14.3/14.3.1"}
                                         title={"14.3.1"}
-                                        description={"Titulo."}
+                                        description={"Protección de los datos de prueba"}
                             />
                         </List>
                     </nav>
