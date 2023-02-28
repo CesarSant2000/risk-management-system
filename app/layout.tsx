@@ -1,4 +1,5 @@
 import {ReactNode} from "react";
+import styles from "@/app/WelcomeCard.module.css";
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body>{children}</body>
+      <body className={styles.body}>{children}</body>
     </html>
   )
 }
