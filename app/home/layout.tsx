@@ -9,6 +9,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import * as React from "react";
 import {useRouter} from "next/navigation";
+import styles from "@/app/home/Others.module.css";
 
 const pages = ['14.1 Requisitos de seguridad de los sistemas de información', '14.2 Seguridad en los procesos de desarrollo y soporte', '14.3 Datos de prueba'];
 
@@ -38,13 +39,16 @@ export default function HomeLayout({children,}: { children: ReactNode }) {
         <>
             <Grid container
                   bgcolor={"white"}
-                  width={"100vw"}
-                  height={"100vh"}
+                  sx={{
+                      height: '100%',
+                      minHeight: '100vh',
+                      maxHeight: '?',
+                  }}
             >
                 <Grid item
                       md={12}
                       xs={12}
-
+                      bgcolor={"white"}
                 >
                     <AppBar position="static">
                         <Container maxWidth="xl">
@@ -90,25 +94,26 @@ export default function HomeLayout({children,}: { children: ReactNode }) {
                         </Container>
                     </AppBar>
                     <Grid container
-                      justifyContent="center"
-                      alignItems="center"
-                >
-                    <Grid
-                        item
-                        xs={12}
-                        sm={10}
-                        md={8}
-                        sx={{
-                            backgroundColor: 'white',
-                            padding: '1rem',
-                            marginTop: '1rem',
-                            marginBottom: '1rem',
-                            borderRadius: '1rem',
-                        }}
+                          justifyContent="center"
+                          alignItems="center"
+                          sx={{}}
                     >
-                        {children}
+                        <Grid
+                            item
+                            xs={12}
+                            sm={10}
+                            md={8}
+                            sx={{
+                                backgroundColor: 'white',
+                                padding: '1rem',
+                                marginTop: '1rem',
+                                marginBottom: '1rem',
+                                borderRadius: '1rem',
+                            }}
+                        >
+                            {children}
+                        </Grid>
                     </Grid>
-                </Grid>
 
                 </Grid>
             </Grid>
