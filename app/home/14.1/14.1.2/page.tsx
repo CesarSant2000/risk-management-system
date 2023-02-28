@@ -14,7 +14,11 @@ export default function FifthPage() {
     textArray.push(<Typography variant={"body1"} textAlign={"justify"}>
         2. Evaluar los riesgos de seguridad: Realice una evaluación de riesgos para determinar
         las amenazas y vulnerabilidades asociadas con los servicios identificados. Esto incluirá
-        identificar posibles amenazas externas y evaluar la vulnerabilidad del sistema.
+        identificar posibles amenazas externas y evaluar la vulnerabilidad del sistema. La identificación
+        de amenazas se la realizará usando STRIDE y la herramienta de microsoft disponible en el siguiente enlace:
+        <a href="https://www.microsoft.com/en-us/securityengineering/sdl/threatmodeling" target={"#"}>
+            Microsoft Threat Modeling Tool
+        </a>
     </Typography>);
     textArray.push(<Typography variant={"body1"} textAlign={"justify"}>
         3. Implementar controles de seguridad adecuados: Utilice los resultados de la evaluación

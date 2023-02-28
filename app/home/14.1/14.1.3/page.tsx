@@ -11,7 +11,11 @@ export default function SixthPage() {
     textArray.push(<Typography variant={"body1"} textAlign={"justify"}>
         2. Identificar las amenazas y los riesgos asociados con la transmisión de datos en
         línea, incluyendo los riesgos de intercepción, manipulación o compromiso de la
-        información.
+        información. La identificación de amenazas se la realizará usando STRIDE y la herramienta de
+        microsoft disponible en el siguiente enlace:
+        <a href="https://www.microsoft.com/en-us/securityengineering/sdl/threatmodeling" target={"#"}>
+            Microsoft Threat Modeling Tool
+        </a>
     </Typography>);
     textArray.push(<Typography variant={"body1"} textAlign={"justify"}>
         3. Implementar medidas de seguridad adecuadas para proteger las transacciones de
