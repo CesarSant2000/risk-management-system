@@ -44,13 +44,13 @@ export default function SecondPage() {
                                         title={"14.2.6"}
                                         description={"Entorno de desarrollo seguro"}
                             />
-                            <OptionCard url={"home/14.2/14.2.8"}
-                                        title={"14.2.8"}
-                                        description={"Pruebas de seguridad de sistemas"}
-                            />
                             <OptionCard url={"home/14.2/14.2.7"}
                                         title={"14.2.7"}
                                         description={"Desarrollo tercerizado"}
+                            />
+                            <OptionCard url={"home/14.2/14.2.8"}
+                                        title={"14.2.8"}
+                                        description={"Pruebas de seguridad de sistemas"}
                             />
                             <OptionCard url={"home/14.2/14.2.9"}
                                         title={"14.2.9"}
