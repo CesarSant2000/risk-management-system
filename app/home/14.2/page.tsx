@@ -28,6 +28,10 @@ export default function SecondPage() {
                                         title={"14.2.1"}
                                         description={"Política de desarrollo seguro"}
                             />
+                            <OptionCard url={"home/14.2/14.2.2"}
+                                        title={"14.2.2"}
+                                        description={"Procedimientos del control de cambios del sistema"}
+                            />
                             <OptionCard url={"home/14.2/14.2.3"}
                                         title={"14.2.3"}
                                         description={"Revisión técnica de las aplicaciones tras efectuar cambios en el sistema operativo"}
