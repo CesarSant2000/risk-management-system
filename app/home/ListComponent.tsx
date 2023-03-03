@@ -19,6 +19,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import Checkbox from "@mui/material/Checkbox";
 import ListItemText from "@mui/material/ListItemText";
+import ReactToPrint from "react-to-print";
 
 export interface CommentaryInterface {
     commentary: string;
@@ -47,10 +48,12 @@ export default function ListComponent(props: { title: JSX.Element, intro: JSX.El
         }
 
         setChecked(newChecked);
+
     };
 
     useEffect(
         () => {
+
             if (checked.length === array.length + 1) {
                 setDialogTitle2(`Sección completada`);
                 setDialogMessage2(`Usted ha completado todos los pasos de esta sección.`);
@@ -96,6 +99,7 @@ export default function ListComponent(props: { title: JSX.Element, intro: JSX.El
 
     function handleDialogClose2() {
         setOpenDialog2(false);
+
     }
 
     function handleCommentary(index: number) {
@@ -121,6 +125,11 @@ export default function ListComponent(props: { title: JSX.Element, intro: JSX.El
             }
         );
         return returnList;
+    }
+
+    function handlePrint() {
+        console.log("Imprimir");
+        window.print();
     }
 
     return (
@@ -213,6 +222,13 @@ export default function ListComponent(props: { title: JSX.Element, intro: JSX.El
                     </Button>
                 </DialogActions>
             </Dialog>
+            <Grid container
+                  justifyContent={"center"}
+                  alignItems={"center"}
+            >
+                <Button variant="contained" onClick={() => handlePrint()}>Imprimir reporte</Button>
+            </Grid>
+
         </>
     )
 }
